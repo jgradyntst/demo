@@ -3,6 +3,51 @@
 @{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<style>
+    body {
+        background-image: url(fs02gnvizbToXqf1c1t7.png);
+        background-size: contain;
+    }
+</style>
+<style>
+    imgblk {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+<div style="height:50px;"></div>
+<div style="height:400px; width:100%; background-color:white;">
+
+    <div class="text-center">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+        <p>Use this page to detail your site's privacy policy.</p>
+    </div>
+    <div class="ntstcenter" style="height:100px;">
+        <div class="column">
+            <img src="~/logo.png" alt="NTST" />
+        </div>
+        <div class="column">
+            <img src="~/ocplogo.jpeg" alt="RHOCP" />
+        </div>
+    </div>
+</div>
+<div style="height:50px;"></div>
