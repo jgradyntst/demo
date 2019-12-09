@@ -42,7 +42,7 @@ namespace Demo.Pages
         public void OnGet()
         {
             ViewData["node"] = GetNodeName();
-            ViewData["pod"] = GetNodeName();
+            ViewData["pod"] = GetPodName();
         }
     }
 }
