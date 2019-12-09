@@ -12,6 +12,7 @@ namespace Demo.Pages
         public void OnGet()
         {
             ViewData["node"] = IndexModel.GetNodeName();
+            ViewData["pod"] = IndexModel.GetPodName();
         }
     }
 }

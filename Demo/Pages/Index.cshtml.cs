@@ -24,9 +24,25 @@ namespace Demo.Pages
 
             return localString;
         }
+
+        public static string GetPodName()
+        {
+            string localString;
+            if (Environment.GetEnvironmentVariable("PodName") != null && Environment.GetEnvironmentVariable("PodName").Length > 0)
+            {
+                localString = Environment.GetEnvironmentVariable("PodName").ToString();
+            }
+            else
+            {
+                localString = "NotAvailable";
+            }
+
+            return localString;
+        }
         public void OnGet()
         {
             ViewData["node"] = GetNodeName();
+            ViewData["pod"] = GetNodeName();
         }
     }
 }
