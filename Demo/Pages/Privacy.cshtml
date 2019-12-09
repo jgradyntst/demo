@@ -14,7 +14,7 @@
 <style>
     body {
         background-image: url(fs02gnvizbToXqf1c1t7.png);
-        background-size: contain;
+        background-size: cover;
     }
 </style>
 <style>
@@ -35,19 +35,21 @@
     }
 </style>
 <div style="height:50px;"></div>
-<div style="height:400px; width:100%; background-color:white;">
+<div class="wrapper">
+    <div style="height:auto; width:100%; background-color:white;">
 
-    <div class="text-center">
-        <h1 class="display-4">@ViewData["Title"]</h1>
-        <p>Use this page to detail your site's privacy policy.</p>
-    </div>
-    <div class="ntstcenter" style="height:100px;">
-        <div class="column">
-            <img src="~/logo.png" alt="NTST" />
+        <div class="text-center">
+            <h1 class="display-4">@ViewData["Title"]</h1>
+            <p>Use this page to detail your site's privacy policy.</p>
         </div>
-        <div class="column">
-            <img src="~/ocplogo.jpeg" alt="RHOCP" />
+        <div class="ntstcenter" style="height:100px;">
+            <div class="column">
+                <img src="~/logo.png" alt="NTST" />
+            </div>
+            <div class="column">
+                <img src="~/ocplogo.jpeg" alt="RHOCP" />
+            </div>
         </div>
     </div>
 </div>
-<div style="height:50px;"></div>
+<div style="min-height:50px;"></div>
