@@ -37,7 +37,12 @@
 <div style="height:50px;"></div>
 <div class="wrapper">
     <div style="height:auto; width:100%; background-color:white;">
-
+        <div class="nodename">
+            <div>
+                This application is running from node/pod: @ViewData["node"] / @ViewData["pod"]
+            </div>
+        </div>
+        <div style="height:30px;"></div>
         <div class="text-center">
             <h1 class="display-4">@ViewData["Title"]</h1>
             <p>Use this page to detail your site's privacy policy.</p>
@@ -48,16 +53,6 @@
             </div>
             <div class="column">
                 <img src="~/ocplogo.jpeg" alt="RHOCP" />
-            </div>
-        </div>
-        <div style="height:30px;"></div>
-        <div class="nodename">
-            <div>
-                This application is running from node: @ViewData["node"]
-            </div>
-            <br />
-            <div>
-                This application is running from pod: @ViewData["pod"]
             </div>
         </div>
     </div>
